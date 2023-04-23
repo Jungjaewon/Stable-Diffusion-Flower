@@ -81,9 +81,8 @@ def training_function(text_encoder, vae, unet):
     )
 
     # Move text_encode and vae to gpu
-    text_encoder.to("cuda:1")
-    vae.to("cuda:1")
-    unet.to("cuda:1")
+    text_encoder.to(accelerator.device)
+    vae.to(accelerator.device)
 
     # We need to recalculate our total training steps as the size of the training dataloader may have changed.
     num_update_steps_per_epoch = math.ceil(
