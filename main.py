@@ -41,9 +41,8 @@ def training_function(text_encoder, vae, unet):
         gradient_accumulation_steps=args.gradient_accumulation_steps,
     )
 
-    accelerator.device = 'cuda:1'
-    print(f'accelerator.device : {accelerator.device}')
-
+    #accelerator.device = 'cuda:1'
+    #print(f'accelerator.device : {accelerator.device}')
 
     set_seed(args.seed)
 
@@ -81,8 +80,8 @@ def training_function(text_encoder, vae, unet):
     )
 
     # Move text_encode and vae to gpu
-    text_encoder.to(accelerator.device)
-    vae.to(accelerator.device)
+    text_encoder.to("cuda:1")
+    vae.to("cuda:1")
 
     # We need to recalculate our total training steps as the size of the training dataloader may have changed.
     num_update_steps_per_epoch = math.ceil(
