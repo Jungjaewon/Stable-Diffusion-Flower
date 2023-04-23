@@ -4,6 +4,9 @@ This is my very first stable-diffusion trial. The flower images under flower_dat
 
 <h3 align="center">Prompt : A photo of a colorful flower in the Acropolis</h3>
 
+
+
+
 ![image_failed](images/a photo of a colorful flower in the Acropolis.JPG)
 
 <h3 align="center">Prompt : A photo of a flower and a dog</h3>
