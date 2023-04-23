@@ -231,7 +231,7 @@ if __name__ == '__main__':
     pipe = StableDiffusionPipeline.from_pretrained(
         args.output_dir,
         torch_dtype=torch.float16,
-    ).to("cuda:1")
+    ).to("cuda")
 
     prompt = f"a photo of {name_of_your_concept} {type_of_thing} in the Acropolis"
 
