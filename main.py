@@ -40,8 +40,10 @@ def training_function(text_encoder, vae, unet):
     accelerator = Accelerator(
         gradient_accumulation_steps=args.gradient_accumulation_steps,
     )
-    print(f'accelerator : {accelerator}')
+
+    accelerator.device = 'cuda:1'
     print(f'accelerator.device : {accelerator.device}')
+
 
     set_seed(args.seed)
 
