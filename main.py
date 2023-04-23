@@ -226,24 +226,3 @@ if __name__ == '__main__':
     )
 
     training_function(text_encoder, vae, unet)
-
-    # Inference!!
-    pipe = StableDiffusionPipeline.from_pretrained(
-        args.output_dir,
-        torch_dtype=torch.float16,
-    ).to("cuda")
-
-    prompt = f"a photo of {name_of_your_concept} {type_of_thing} in the Acropolis"
-
-    # Tune the guidance to control how closely the generations follow the prompt.
-    # Values between 7-11 usually work best
-    guidance_scale = 7
-
-    num_cols = 2
-    all_images = []
-    for _ in range(num_cols):
-        images = pipe(prompt, guidance_scale=guidance_scale).images
-        all_images.extend(images)
-
-    result_image = image_grid(all_images, 1, num_cols)
-    result_image.save(f'{prompt}.jpg')
