@@ -35,6 +35,9 @@ This is my very first stable-diffusion trial. The flower images under flower_dat
 <h3 align="center">Prompt : A picture of a flower in the subway</h3>
 ![A picture of a flower in the subway](images/a picture of a flower in the subway.jpg)
 
+<h3 align="center">Prompt : A picture of a flower in the subway</h3>
+![A picture of a flower in the subway](images/a_picture_of_a_flower_in_the_subway.jpg)
+
 
 ## Reference
 HuggingFace : https://github.com/huggingface/diffusion-models-class/tree/main/unit3
