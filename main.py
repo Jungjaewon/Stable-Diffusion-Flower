@@ -41,6 +41,7 @@ def training_function(text_encoder, vae, unet):
         gradient_accumulation_steps=args.gradient_accumulation_steps,
     )
     print(f'accelerator : {accelerator}')
+    print(f'accelerator.device : {accelerator.device}')
 
     set_seed(args.seed)
 
