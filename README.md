@@ -2,8 +2,6 @@
 
 This is my very first stable-diffusion trial. The flower images under flower_dataset are used for training a model. The all iamges were taken by my camera.
 
-<p align="center">
-
 <h3 align="center">Prompt : A photo of a colorful flower in the Acropolis</h3>
 ![a photo of a colorful flower in the Acropolis](images/a photo of a colorful flower in the Acropolis.jpg)
 
@@ -36,7 +34,6 @@ This is my very first stable-diffusion trial. The flower images under flower_dat
 
 <h3 align="center">Prompt : A picture of a flower in the subway</h3>
 ![A picture of a flower in the subway](images/a picture of a flower in the subway.jpg)
-</p>
 
 
 ## Reference
