@@ -28,7 +28,7 @@ if __name__ == '__main__':
         torch_dtype=torch.float16,
     ).to("cuda")
 
-    prompt = input("Please put prompt")
+    prompt = input("Please put prompt\n")
     print(f'prompt : {prompt}')
 
     # Tune the guidance to control how closely the generations follow the prompt.
