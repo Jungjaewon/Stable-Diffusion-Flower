@@ -189,7 +189,7 @@ if __name__ == '__main__':
     learning_rate = 2e-06
     max_train_steps = 400
 
-    name_of_your_concept = "an old paint"  # CHANGE THIS ACCORDING TO YOUR SUBJECT
+    name_of_your_concept = "a colorful"  # CHANGE THIS ACCORDING TO YOUR SUBJECT
     type_of_thing = "flower"  # CHANGE THIS ACCORDING TO YOUR SUBJECT
     instance_prompt = f"a photo of {name_of_your_concept} {type_of_thing}"
     print(f"Instance prompt: {instance_prompt}")
